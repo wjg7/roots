@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #000; /* Black text */
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #000; /* Black background for header */
+    color: #fff;
+    padding: 20px 0; /* More padding for a balanced look */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+header .logo {
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    max-width: 150px; /* Set a max width for the logo */
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat for navigation */
+}
+
+header nav ul li a:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #1a1313; /* Darker background for sections */
+    color: #fff; /* White text color */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ccba54;
+    text-align: center;
+}
+
+a {
+    color: #ff9800; /* Orange color for links */
+}
+
+a:hover {
+    color: #ff5722; /* Darker orange on hover */
+}
+
+/* Join Section Styles */
+.join-options {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between boxes */
+    margin-top: 20px;
+}
+
+.option-box {
+    background-color: #222; /* Slightly darker background for the boxes */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%; /* Make each box take up a third of the available width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: left; /* Align text to the left within the boxes */
+}
+
+.option-box h3 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff; /* White color for subtitles */
+}
+
+/* Responsive Design for Join Section */
+@media (max-width: 768px) {
+    .join-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Social Icons Section Styles */
+#socials {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #1a1313; /* Darker background for the section */
+    color: #fff; /* White text color */
+}
+
+#socials .social-icons {
+    display: flex;
+    justify-content: center; /* Center social icons */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#socials .social-icons a {
+    color: #fff; /* White color for icons */
+    font-size: 40px; /* Larger icon size */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+#socials .social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background for footer */
+    color: #fff;
