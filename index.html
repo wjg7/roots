@@ -21,9 +21,8 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#donate">Donate</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#socials">Socials</a></li>
                 <li><a href="#instagram">Instagram</a></li>
             </ul>
         </nav>
@@ -75,15 +74,36 @@
             </script>
         </div>
     </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <iframe id="iframe-container" src="https://events.humanitix.com/event-listings?w=true&u=BiPvdqhvhsNuxjGp06YJ9uE0WPX2&o=all&bc=%23353337&bt=Get%20Tickets&tc=%23FFFFFF" width="100%" height="600px" frameborder="0"></iframe>
+
+        <script>
+            window.addEventListener('message', function (e) {
+                if (!e.origin.endsWith(".humanitix.com")) {
+                    return;
+                }
+                
+                var messageData = e.data;
+                var iframeEl = document.getElementById('iframe-container');
+        
+                // Validate the message data
+                if (iframeEl && messageData && !isNaN(messageData.scrollHeight)) {
+                    iframeEl.style.height = (messageData.scrollHeight + 20) + 'px'; // Adjust the height based on the content
+                }
+            }, false);
+        </script>
+    </section>
     
     <section id="instagram">
         <h2>Instagram Latest</h2>
         <!-- SnapWidget -->
-        <iframe src="https://snapwidget.com/embed/1077046" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:205px; height:615px" title="Posts from Instagram"></iframe>
+        <iframe src="https://snapwidget.com/embed/1077046" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:205px; height:615px" title="Posts from Instagram"></iframe>
     </section>
 
     <section id="socials">
-        <h2>Follow Us</h2>
+        <h2>Socials</h2>
         <div class="social-icons">
             <a href="https://www.facebook.com/rootsbrotherhood" class="fa fa-facebook" target="_blank"></a>
             <a href="https://www.instagram.com/roots_brotherhood/" class="fa fa-instagram" target="_blank"></a>
