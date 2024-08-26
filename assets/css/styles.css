@@ -66,11 +66,11 @@ h1, h2 {
 }
 
 a {
-    color: #ff9800; /* Orange color for links */
+    color: #ccba54; /* Orange color for links */
 }
 
 a:hover {
-    color: #ff9800; /* Darker orange on hover */
+    color: #ccba54; /* Darker orange on hover */
 }
 
 /* Join Section Styles */
