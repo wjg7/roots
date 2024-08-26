@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #000000; /* Black background */
-    color: #000; /* Black text */
+    color: #fff; /* White text */
     line-height: 1.6;
     text-align: center;
 }
@@ -11,18 +11,14 @@ body {
 header {
     background-color: #000; /* Black background for header */
     color: #fff;
-    padding: 20px 0; /* More padding for a balanced look */
+    padding: 20px 0; /* Balanced padding */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the content horizontally */
 }
 
-header .logo {
-    margin-bottom: 10px;
-}
-
 header .logo img {
-    max-width: 150px; /* Set a max width for the logo */
+    max-width: 150px; /* Consistent max width for the logo */
     height: auto;
 }
 
@@ -66,11 +62,11 @@ h1, h2 {
 }
 
 a {
-    color: #ccba54; /* Orange color for links */
+    color: #ccba54; /* Consistent link color */
 }
 
 a:hover {
-    color: #ccba54; /* Darker orange on hover */
+    color: #ff9800; /* Hover color for links */
 }
 
 /* Join Section Styles */
@@ -103,40 +99,45 @@ a:hover {
         align-items: center;
     }
 
-    .option-box {
+    /* Leaders Section Styles */
+.leaders {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between boxes */
+    margin-top: 20px;
+}
+
+.leader-box {
+    background-color: #222; /* Slightly darker background for the boxes */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%; /* Make each box take up nearly half of the available width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: left; /* Align text to the left within the boxes */
+}
+
+.leader-box h3 {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccba54; /* White color for subtitles */
+}
+
+.leader-photo {
+    width: 100%; /* Make the placeholder photo fit the box */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for Leaders Section */
+@media (max-width: 768px) {
+    .leaders {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leader-box {
         width: 100%;
         margin-bottom: 20px;
     }
 }
-
-/* Social Icons Section Styles */
-#socials {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: #1a1313; /* Darker background for the section */
-    color: #fff; /* White text color */
-}
-
-#socials .social-icons {
-    display: flex;
-    justify-content: center; /* Center social icons */
-    gap: 15px;
-    margin-top: 15px;
-}
-
-#socials .social-icons a {
-    color: #fff; /* White color for icons */
-    font-size: 40px; /* Larger icon size */
-    text-decoration: none;
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-#socials .social-icons a:hover {
-    transform: scale(1.2); /* Slightly enlarge the icon on hover */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #000; /* Black background for footer */
-    color: #fff;
