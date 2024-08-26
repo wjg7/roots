@@ -66,7 +66,19 @@ a {
 }
 
 a:hover {
-    color: #ff9800; /* Hover color for links */
+    color: #ccba54; /* Hover color for links */
+}
+
+/* Social Icons Styles */
+.social-icons a {
+    color: #ffffff; /* Gold color for social icons */
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff9800; /* Hover color for social icons */
 }
 
 /* Join Section Styles */
@@ -95,31 +107,41 @@ a:hover {
 /* Leaders Section Styles */
 .leaders {
     display: flex;
-    justify-content: space-between; /* Distribute space evenly between boxes */
+    justify-content: space-around; /* Use space-around to bring the boxes closer together */
     margin-top: 20px;
 }
 
 .leader-box {
     background-color: #222; /* Slightly darker background for the boxes */
     color: #fff; /* White text */
-    padding: 20px;
+    padding: 10px; /* Reduce padding to match smaller photo size */
     border-radius: 5px;
-    width: 30%; /* Make each box take up a third of the available width */
+    width: 20%; /* Reduce width to match the smaller image size */
     box-sizing: border-box; /* Include padding in width calculation */
-    text-align: left; /* Align text to the left within the boxes */
+    text-align: center; /* Center text within the boxes */
+    margin-bottom: 20px; /* Space below each box */
+    overflow: hidden; /* Ensure text does not force the box to grow */
 }
 
 .leader-box h3 {
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     color: #ccba54; /* Gold color for subtitles */
+    font-size: 1rem; /* Reduce font size slightly */
+}
+
+.leader-box p {
+    font-size: 0.875rem; /* Reduce the font size for the description */
+    line-height: 1.4; /* Adjust line height for better text fit */
+    margin: 10px 0 0; /* Adjust margin to better fit within the box */
 }
 
 .leader-photo {
     width: 100%; /* Make the placeholder photo fit the box */
     height: auto;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    transform: scale(0.9); /* Scale the photo to 50% */
 }
 
 /* Responsive Design for Join and Leaders Sections */
