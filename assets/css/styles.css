@@ -11,11 +11,17 @@ body {
 header {
     background-color: #000; /* Black background for header */
     color: #fff;
-    padding: 20px 0; /* Balanced padding */
+    padding: 20px 0 10px 0; /* Reduce bottom padding to make the gap tighter */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the content horizontally */
+    margin-bottom: 5x; /* Add margin-bottom to reduce space */
 }
+
+section:first-of-type {
+    margin-top: 2px; /* Reduce top margin of the first section */
+}
+
 
 header .logo img {
     max-width: 150px; /* Consistent max width for the logo */
@@ -25,7 +31,7 @@ header .logo img {
 header nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
     justify-content: center; /* Center the navigation items */
 }
@@ -37,7 +43,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff; /* White text color */
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-family: 'Montserrat', sans-serif; /* Apply Montserrat for navigation */
 }
 
@@ -50,7 +56,7 @@ header nav ul li a:hover {
 section {
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #1a1313; /* Darker background for sections */
     color: #fff; /* White text color */
 }
@@ -75,10 +81,12 @@ a:hover {
     font-size: 24px; /* Adjust size as needed */
     margin: 0 10px;
     text-decoration: none;
+    
 }
 
 .social-icons a:hover {
     color: #ff9800; /* Hover color for social icons */
+    transform: scale(1.7); /* Slightly enlarge the icon on hover */
 }
 
 /* Join Section Styles */
@@ -92,7 +100,7 @@ a:hover {
     background-color: #222; /* Slightly darker background for the boxes */
     color: #fff; /* White text */
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 30%; /* Make each box take up a third of the available width */
     box-sizing: border-box; /* Include padding in width calculation */
     text-align: left; /* Align text to the left within the boxes */
@@ -115,7 +123,7 @@ a:hover {
     background-color: #222; /* Slightly darker background for the boxes */
     color: #fff; /* White text */
     padding: 10px; /* Reduce padding to match smaller photo size */
-    border-radius: 5px;
+    border-radius: 20px;
     width: 20%; /* Reduce width to match the smaller image size */
     box-sizing: border-box; /* Include padding in width calculation */
     text-align: center; /* Center text within the boxes */
@@ -139,7 +147,7 @@ a:hover {
 .leader-photo {
     width: 100%; /* Make the placeholder photo fit the box */
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 10px;
     transform: scale(0.9); /* Scale the photo to 50% */
 }
