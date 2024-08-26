@@ -114,29 +114,7 @@
         height="600px"
         frameborder="0"
       ></iframe>
-      <script>
-        window.addEventListener(
-          "message",
-          function (e) {
-            if (!e.origin.endsWith(".humanitix.com")) {
-              return;
-            }
-            var messageData = e.data;
-            var iframeEl = document.getElementById("iframe-container");
-            if (
-              iframeEl &&
-              messageData &&
-              !isNaN(messageData.scrollHeight) &&
-              messageData.location === iframeEl.src
-            ) {
-              iframeEl.style.height = messageData.scrollHeight + 20 + "px";
-            }
-          },
-          false
-        );
-      </script>
-
-      <script>
+        <script>
         window.addEventListener(
           "message",
           function (e) {
