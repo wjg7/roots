@@ -76,7 +76,7 @@ Please ensure that your contributions adhere to the coding standards and guideli
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LI isCENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE] file for more details.
 
 ## Contact
 
