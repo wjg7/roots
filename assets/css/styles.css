@@ -89,17 +89,10 @@ a:hover {
 .option-box h3 {
     margin-top: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #ccba54; /* White color for subtitles */
+    color: #ccba54; /* Gold color for subtitles */
 }
 
-/* Responsive Design for Join Section */
-@media (max-width: 768px) {
-    .join-options {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Leaders Section Styles */
+/* Leaders Section Styles */
 .leaders {
     display: flex;
     justify-content: space-between; /* Distribute space evenly between boxes */
@@ -111,15 +104,15 @@ a:hover {
     color: #fff; /* White text */
     padding: 20px;
     border-radius: 5px;
-    width: 45%; /* Make each box take up nearly half of the available width */
+    width: 30%; /* Make each box take up a third of the available width */
     box-sizing: border-box; /* Include padding in width calculation */
     text-align: left; /* Align text to the left within the boxes */
 }
 
 .leader-box h3 {
-    margin-top: 10px;
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #ccba54; /* White color for subtitles */
+    color: #ccba54; /* Gold color for subtitles */
 }
 
 .leader-photo {
@@ -128,15 +121,16 @@ a:hover {
     border-radius: 5px;
     margin-bottom: 15px;
 }
-}
 
-/* Responsive Design for Leaders Section */
+/* Responsive Design for Join and Leaders Sections */
 @media (max-width: 768px) {
+    .join-options,
     .leaders {
         flex-direction: column;
         align-items: center;
     }
 
+    .option-box,
     .leader-box {
         width: 100%;
         margin-bottom: 20px;
