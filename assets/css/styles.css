@@ -160,10 +160,54 @@ a:hover, .btn:hover {
     text-align: center;
 }
 
-
 .box h3 {
     margin-top: 0;
     font-size: var(--font-size-h3);
+}
+
+/* Resource Item Styles */
+.resource-item {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevates on hover */
+}
+
+.resource-item h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: var(--font-size-h3);
+}
+
+.resource-item p {
+    margin: 10px 0;
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+}
+
+.resource-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resource-item .btn:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 /* Responsive Design */
@@ -191,7 +235,6 @@ a:hover, .btn:hover {
     object-fit: cover; /* Ensure the image covers the box area */
 }
 
-
 .social-icons a {
     color: var(--text-color);
     font-size: 30px;
@@ -204,3 +247,4 @@ a:hover, .btn:hover {
     color: var(--accent-color);
     transform: scale(1.2);
 }
+got c
