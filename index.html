@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roots Brotherhood</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/images/logo.png"
+          alt="Shropshire Roots Brotherhood Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#socials">Socials</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="pages/resources.html">Resources</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="box-section">
+      <h1>Welcome to Shropshire Roots Brotherhood</h1>
+      <p>
+        Shropshire Roots Brotherhood is a community-driven organization committed to empowering men through free, accessible services, leadership training, and personal growth opportunities. As a Community Interest Company (CIC), our mission is to ensure every man has the chance to lead a life of integrity, strength, and purpose.
+      </p>
+      <a href="pages/about.html" class="btn">Learn More</a>
+    </section>
+
+    <section id="join" class="box-section">
+      <h2>Get Involved</h2>
+      <div class="box-container">
+        <div class="box">
+          <h3>Join Our Community</h3>
+          <p>
+            Become part of our brotherhood by joining our social media groups
+            and participating in discussions.
+          </p>
+          <a href="https://www.facebook.com/groups/959204428934100" target="_blank" class="btn">Facebook Group</a>
+          <a href="https://chat.whatsapp.com/LYMAOXdhddMFbTgb2xZo3J" target="_blank" class="btn">WhatsApp Group</a>
+        </div>
+        <div class="box">
+          <h3>Attend Events</h3>
+          <p>
+            Participate in our events and meetups to connect with like-minded
+            individuals. Check out our event schedule and book your spot.
+          </p>
+          <a href="https://events.humanitix.com/host/shropshire-roots-brotherhood" target="_blank" class="btn">Event Schedule</a>
+        </div>
+        <div class="box">
+          <h3>Partnerships</h3>
+          <p>
+            Collaborate with us to create lasting change. Reach out for
+            partnership opportunities and more information.
+          </p>
+          <a href="mailto:info@shropshireroots.org" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="box-section">
+      <h2>Support Us</h2>
+      <p>Your donations help us continue our mission. Every contribution counts.</p>
+      <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script
+          src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+          charset="UTF-8"
+        ></script>
+        <script>
+          PayPal.Donation.Button({
+            env: "production",
+            hosted_button_id: "S97W9Q5ZQKLQS",
+            image: {
+              src: "assets/images/paypal.png",
+              alt: "Donate with PayPal button",
+              title: "PayPal - The safer, easier way to pay online!",
+            },
+          }).render("#donate-button");
+        </script>
+      </div>
+    </section>
+
+    <section id="events" class="box-section">
+      <h2>Upcoming Events</h2>
+      <iframe
+        id="iframe-container"
+        src="https://events.humanitix.com/event-listings?w=true&u=BiPvdqhvhsNuxjGp06YJ9uE0WPX2&o=all&bc=%23353337&bt=Register&tc=%23FFFFFF"
+        width="100%"
+        height="600px"
+        frameborder="0"
+      ></iframe>
+    </section>
+
+    <section id="instagram" class="box-section">
+      <h2>Latest News</h2>
+<!-- SnapWidget -->
+<iframe src="https://snapwidget.com/embed/1077046" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:680px; height:1700px" title="Posts from Instagram"></iframe>
+    </section>
+
+    <section id="socials" class="box-section">
+      <h2>Connect with Us</h2>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/rootsbrotherhood"
+          class="fab fa-facebook-f"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.instagram.com/roots_brotherhood/"
+          class="fab fa-instagram"
+          target="_blank"
+        ></a>
+        <a
+          href="https://chat.whatsapp.com/LYMAOXdhddMFbTgb2xZo3J"
+          class="fab fa-whatsapp"
+          target="_blank"
+        ></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Shropshire Roots Brotherhood - Community Interest Company
+      </p>
+    </footer>
+  </body>
+</html>
