@@ -270,7 +270,7 @@ a:hover,
 
 .leader-photo {
   width: 100%;
-  height: auto;
+  height: 300px; /* Set a fixed height */
   border-radius: 10px;
   object-fit: cover;
 }
