@@ -5,7 +5,7 @@
   --background-color: #000000;
   --text-color: #ffffff;
   --box-background-color: #100f0f;
-  --accent-color: #646464;
+  --accent-color: #000000;
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Montserrat", sans-serif;
   --font-size-base: 18px;
@@ -17,14 +17,16 @@
 
 /* General Styles */
 body {
-  margin: 0;
+  margin: 0 auto; /* This centers the content horizontally */
   font-family: var(--font-family-primary);
   background-color: var(--background-color);
   color: var(--text-color);
   font-size: var(--font-size-base);
   line-height: 1.6;
   text-align: center;
+  max-width: 1000px; /* Content width limited to 1000px */
 }
+
 
 header,
 footer {
