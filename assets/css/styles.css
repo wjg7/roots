@@ -22,7 +22,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-size: var(--font-size-base);
-  line-height: 1.6;git p
+  line-height: 1.6;
   text-align: center;
   max-width: 1000px; /* Content width limited to 1000px */
 }
