@@ -37,7 +37,7 @@ footer {
 }
 
 header .logo img {
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -48,6 +48,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap:15px;
 }
 
 header nav ul li {
@@ -57,11 +58,12 @@ header nav ul li {
 header nav ul li a {
   color: var(--primary-color);
   text-decoration: none;
-  padding: 5px;
+  padding: 10px 15px; /* Provide clickable padding for better usability */
   font-family: var(--font-family-secondary);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: var(--font-size-base);
   font-weight: 600;
+  position: relative;
 }
 
 header nav ul li a:hover {
