@@ -90,7 +90,9 @@ html {
 }
 
 /* Section Titles */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-family-secondary);
   color: var(--primary-color);
   font-weight: 900;
@@ -112,7 +114,9 @@ h3 {
 }
 
 /* Paragraph and Link Styles */
-p, a, li {
+p,
+a,
+li {
   font-size: var(--font-size-base);
   margin-bottom: 20px;
   line-height: 1.6; /* Improved line spacing */
@@ -157,7 +161,8 @@ a:hover {
   margin-bottom: 40px;
   text-align: center;
   border-radius: 10px;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .box:hover {
@@ -232,7 +237,8 @@ a:hover {
 .main-footer .social-icons a {
   color: var(--text-color);
   font-size: 28px;
-  transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .main-footer .social-icons a:hover {
