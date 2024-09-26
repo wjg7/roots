@@ -15,6 +15,7 @@
   --font-size-h3: 24px;
   --logo-hover-scale: 1.15;
   --transition-speed: 0.3s;
+  --button-size: 0.8; /* Custom variable for button size scaling */
 }
 
 /* General Styles */
@@ -116,7 +117,7 @@ li {
 a,
 .btn {
   font-family: var(--font-family-secondary);
-  font-size: var(--font-size-base);
+  font-size: calc(var(--font-size-base) * var(--button-size)); /* Scaled font size */
   font-weight: 600;
   color: var(--primary-color);
   transition: color var(--transition-speed);
@@ -129,19 +130,18 @@ a:hover,
 
 /* Button Styles */
 .btn {
-  padding: 15px 30px;
+  padding: calc(15px * var(--button-size)) calc(30px * var(--button-size)); /* Scaled padding */
   border-radius: 50px; /* Soft oval shape */
   background-color: var(--primary-color);
   color: var(--background-color);
   text-transform: uppercase;
   font-family: var(--font-family-secondary);
-  font-size: var(--font-size-large);
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: calc(1.5px * var(--button-size)); /* Scaled letter spacing */
   display: inline-block;
   text-align: center;
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, transform var(--transition-speed) ease;
-  margin-top: 20px;
+  margin-top: calc(20px * var(--button-size)); /* Scaled margin */
 }
 
 .btn:hover {
