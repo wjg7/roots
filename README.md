@@ -83,5 +83,5 @@ This project is licensed under the MIT License. See the [LICENSE] file for more 
 If you have any questions or need further information, please feel free to contact us at:
 
 - Email: info@shropshireroots.org
-- Website: [Shropshire Roots Brotherhood](https://shropshireroots.org)
-- GitHub: [wjg7](https://github.com/wjg7)
+- Website: [Shropshire Roots Brotherhood](https://rootsbrotherhood.org)
+- GitHub: [wjg7](https://github.com/wjg7/roots)
