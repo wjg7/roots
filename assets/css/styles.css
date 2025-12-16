@@ -252,6 +252,8 @@ header nav ul li a:hover::after {
 .box-section {
   padding: 120px 20px;
   text-align: center;
+  position: relative; /* Ensure z-index works if needed */
+  z-index: 1;
 }
 
 .box-section:nth-child(even) {
