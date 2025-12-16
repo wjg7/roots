@@ -383,9 +383,13 @@ footer {
 
 /* Specific Section Tweaks */
 #instagram {
-  margin-top: 80px;
-  min-height: 600px; /* Force minimum height space */
+  padding-top: 150px; /* Use padding to force space (margins can collapse) */
+  margin-top: 0;
+  min-height: 800px;
   display: block;
+  clear: both; /* Ensure it clears previous floats/grids */
+  background-color: var(--background-color); /* Ensure opaque background */
+  overflow: visible; /* Let content flow */
 }
 
 #about h3 i {
