@@ -269,6 +269,7 @@ header nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   margin-top: 64px;
+  width: 100%; /* Ensure container takes full width */
 }
 
 .box {
