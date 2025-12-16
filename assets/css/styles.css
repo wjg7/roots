@@ -252,8 +252,11 @@ header nav ul li a:hover::after {
 .box-section {
   padding: 120px 20px;
   text-align: center;
-  position: relative; /* Ensure z-index works if needed */
+  position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box-section:nth-child(even) {
@@ -376,6 +379,10 @@ footer {
 }
 
 /* Specific Section Tweaks */
+#instagram {
+  margin-top: 60px; /* Extra buffer to prevent visual overlap */
+}
+
 #about h3 i {
     font-family: serif; 
     color: var(--text-color);
