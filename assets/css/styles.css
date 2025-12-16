@@ -97,7 +97,6 @@ a:hover {
 
 /* Layout Container */
 .container, 
-body > section:not(#hero), 
 header, 
 footer {
   max-width: 1200px;
@@ -251,6 +250,8 @@ header nav ul li a:hover::after {
 /* Sections */
 .box-section {
   padding: 120px 20px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in width */
   text-align: center;
   position: relative;
   z-index: 1;
